@@ -1,7 +1,11 @@
+
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Analytics } from "@vercel/analytics/react"
+
 import "./index.css"
+
 import { MusicProvider, StoreProvider } from "./components/AppState"
 import Layout from "./components/Layout"
 import Home from "./pages/Home"
@@ -38,5 +42,6 @@ createRoot(document.getElementById("root")!).render(
         </BrowserRouter>
       </MusicProvider>
     </StoreProvider>
+    <Analytics />
   </StrictMode>,
 )
