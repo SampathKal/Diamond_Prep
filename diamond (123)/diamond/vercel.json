@@ -1,0 +1,4 @@
+{
+  "functions": { "api/scan.ts": { "includeFiles": "api/library.json" } },
+  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
+}
